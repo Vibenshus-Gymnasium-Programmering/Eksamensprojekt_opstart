@@ -1,0 +1,3 @@
+Dette repo indeholder en præsentation til opstart af eksamensprojektet i programmering B på Vibenshus Gymnasium.
+
+Selve præsentationen kan findes her: https://vibenshus-gymnasium-programmering.github.io/Eksamensprojekt_opstart

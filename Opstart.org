@@ -1,0 +1,331 @@
+#+title: Eksamensprojekt
+#+subtitle: Opstart
+#+author: Programmering B
+#+date: Vibenshus Gymnasium
+# Themes: beige|black|blood|league|moon|night|serif|simple|sky|solarized|white
+#+reveal_theme: night
+#+reveal_title_slide: <h2>%t</h2><h3>%s</h3><h4>%a</h4><h4>%d</h4>
+#+reveal_title_slide_background:
+#+reveal_default_slide_background:
+#+reveal_extra_options: slideNumber:"c",progress:true,transition:"slide",navigationMode:"default",history:false,hash:true
+# #+reveal_extra_attr: style="color:red"
+#+options: toc:nil num:nil tags:nil timestamp:nil ^:{}
+* Projektoplægget
+#+attr_html: :height 500px
+[[./Projektoplaeg/Eksamensprojekt_pro_B_oplaeg.pdf][file:Projektoplaeg/projektoplaeg_forside.png]]
+
+** Emner
+#+reveal_html: <div style="font-size: 80%;">
+- 1. Underholdning :: Program til jeres fritid.
+- 2. Hjælp til hverdagen :: Program til at hjælpe jer selv i hverdagen som gymnasieelever.
+- 3. Databehandling :: Indhent, behandl og præsenter data vha. et program.
+- 4. Robotudvikling :: Mere leg med Lego Mindstorms.
+- 5. Samspil med et andet fag :: Kombinér eksamensprojekter mellem programmering og et andet fag.
+* Gruppedannelse
+#+attr_html: :height 500px
+[[./img/grupper.jpeg]]
+
+** Gruppedannelse
+- Der må være 2 eller 3 elever i hver gruppe.
+- Grupperne skal indmeldes til mig.
+- Grupperne skal oprette sig som grupper på github classroom.
+- Hver gruppe skal angive sit emne fra oplægget.
+
+
+* Gruppesamling
+#+attr_html: :height 400px
+[[./img/gruppesamling.jpeg]]
+
+- Grupper med samme emne fra oplægget sætter sig i nærheden af hinanden.
+ 
+** Pitch jeres idéer for hinanden
+- Hver gruppe præsenterer deres projektidé for de andre grupper inden for samme emne.
+
+* Idégenerering
+#+attr_html: :height 500px
+[[./img/idegenerering.jpeg]]
+** Associationskæde
+- Tilfældigt associationskort
+- 1. medlem siger et ord, som associeres med kortet. Skriv ordet ned.
+- Næste medlem siger et nyt ord, som associeres med det forrige ord. Skriv også det det.
+- Fortsæt til I har 20 til 30 ord.
+** Fokus
+- Udvælg ét særligt fokusområde.
+- Det skal være meget idéskabende.
+** Idéskabelse
+- Forbind ordene fra associationskæden med fokusområdet.
+- Nogle af forbindelserne vil skabe idéer. Skriv disse idéer ned ligegyldigt om de er gode eller dårlige.
+** Konkretisering
+- Nogle idéer skal bare smides ud.
+- Nogle idéer er konkrete i forvejen.
+- Nogle idéer kan gøres konkrete ved at spørge med "hv"-ord. F.eks. "Hvordan kan denne idé udføres?"
+** Idési
+#+attr_html: :height 500px
+[[./img/idesi.jpeg]]
+
+** Idési
+#+reveal_html: <div style="font-size: 50%;">
+- *Valg af kriterier*
+
+  Gruppen udvælger sammen kriterier. Prioritér kriterierne efter 1-5. 1 "ikke vigtig", 5 "meget vigtig".
+
+- *Individuel vurdering*
+
+  Hvert medlem gennemgår idéerne og vurderer, hvor godt idéen opfylder hver af kriterierne. Giv et tal mellem 1 og 5 for hvert kriterie per idé.
+  
+- *Sammentælling*
+
+  |       | Krav 1 (prio 5) | Krav 2 (prio 2) | Krav 3 (prio 3) | Resultat |
+  |-------+-----------------+-----------------+-----------------+----------|
+  | Idé 1 |               3 |               3 |               2 |       27 |
+  | Idé 2 |               1 |               4 |               3 |       22 |
+  | Idé 3 |               5 |               2 |               1 |       32 |
+  | Idé 4 |               3 |               2 |               2 |       25 |
+  |-------+-----------------+-----------------+-----------------+----------|
+
+- *Find gennemsnit for hver idé i gruppen*
+
+  
+** Logbog
+#+attr_html: :height 500px
+[[./img/logbog.jpeg]]
+ 
+** Logbog
+#+reveal_html: <div style="font-size: 70%;">
+- Alle grupper skal være have et aktivt repository på github classroom
+- Hver gruppe skal oprette en ny fil kaldet =logbog.md= eller =logbog.org= og gemme den i deres git-repo. (Kan oprettes og editeres direkte på github)
+- I logbogen skal hver gruppe indskrive:
+  - Associationskæden
+  - Fokusområdet
+  - Alle idéerne fra koblingen mellem fokusområde og associationskæden
+  - Vurderingskriterier fra idésien
+  - Eksempler på sammentælling ift udvælgelse af idéer
+  - Udvælgelse af gruppens bedste idé.
+* Abstrakt dokumentation
+#+attr_html: :height 450px
+[[./img/abstrakt_dokumentation.jpeg]]
+** Abstrakt dokumentation
+#+reveal_html: <div style="font-size: 80%;">
+| Programdel                          | Dokumentationsform |
+|-------------------------------------+--------------------|
+| Præsentationslag (Frontend/View)    | Brugerhistorier    |
+| Applikationslag (Controller)        | Sekvensdiagrammer  |
+| Datalag (database/gemte file/Model) | Klassediagram      |
+** Brugerhistorier
+- Skrevet i naturligt sprog.
+- Evaluerbar. Kan testes efter implementering.
+- Passende detaljegrad.
+- Nummeres, så man nemt kan henvise til dem.
+** Eksempel Boghandel
+#+reveal_html: <div style="font-size: 60%;">
+
+Brugerhistorie 1: Bestil bøger
+
+#+begin_quote
+1. Brugeren vælger en bog fra listen af bøger.
+2. Brugeren klikker på knappen "Bestil flere".
+3. Programmet viser en dialog, hvor brugeren kan se:
+   a. Bogens titel
+   b. En Spinbox, hvor man kan vælge det antal bøger man ønsker at bestille. (0-10)
+   c. En "OK"-knap
+4. Brugeren vælger det ønskede antal bøger og klikker "OK".
+   a. Hvis antallet er større end 0, oprettes en transaktion, hvor bøgernes pris trækkes fra kassen, og bøgerne tilføjes lageret.
+   b. Hvis antallet er 0 oprettes ingen transaktion, og der sker intet med lageret.
+5. Programmet lukker dialogen.
+#+end_quote
+** Logbog
+#+attr_html: :height 500px
+[[./img/logbog.jpeg]]
+** Logbog
+#+reveal_html: <div style="font-size: 70%;">
+- I logbogen skal hver gruppe indskrive en række brugerhistorier, som kan bruges til udvikling og test af produktet.
+** Sekvensdiagram
+- Dokumenterer applikationslaget.
+- Beskriver de beskeder, som sendes gennem programmet for at implementere en brugerhistorie.
+- Tegnes som diagrammer (i plantuml eller lignende)
+** Eksempel Reguler løn
+#+reveal_html: <div style="font-size: 60%;">
+#+attr_html: height 450px
+[[./img/sekvensdiagram_orig.png]]
+
+Eksemplet er lånt herfra https://www.emu.dk/stx/programmering/inspiration-til-undervisning/softwareudvikling-og-programmering
+** Eksemplet i plantuml
+#+reveal_html: <div style="font-size: 70%;">
+#+reveal_html: <div style="display: grid; grid-template-columns: auto auto;">
+#+reveal_html: <div>
+#+attr_html: height 450px
+[[./img/sekvensdiagram.png]]
+#+reveal_html: </div>
+
+#+reveal_html: <div>
+Koden er
+
+#+begin_src :eval never-export
+@startuml
+title Regulér løn
+actor Bruger
+
+participant "app:Boghandel" as app
+participant "dlg:TopLevel" as dlg
+participant "ansat:Employee" as ansat
+
+activate Bruger
+Bruger -> app : Klik på "Vis ansatte"
+app -> dlg : <<create>>
+Bruger ->> dlg : Vælg ønsket løn
+Bruger -> dlg : Klik på OK
+deactivate Bruger
+app <- dlg : update_employee()
+app -> ansat : set salary
+@enduml
+#+end_src
+#+reveal_html: </div>
+#+reveal_html: </div>
+
+Find meget mere info her: https://plantuml.com/sequence-diagram
+
+** Klassediagram
+- Dokumenterer datalaget.
+- Skaber overblik og kobler programmets dele sammen.
+
+** Eksempel boghandel
+#+attr_html: height 450px
+[[./img/klassediagram_orig.png]]
+** Eksemplet i plantuml
+#+reveal_html: <div style="display: grid; grid-template-columns: 60% auto;">
+#+reveal_html: <div>
+#+attr_html: height 450px
+[[./img/klassediagram.png]]
+
+#+reveal_html: </div>
+
+#+reveal_html: <div style="font-size: 50%"> 
+Koden er
+#+reveal_html: <div style="overflow-y: scroll;height:400px">
+#+begin_src :eval never-export
+@startuml
+class Employee {
++employeeId: String
++salary: int
++name: String
++paychecks: Transaction[]
++get_next_id(): int
+}
+class Boghandelen {
++stock: Stock
++accounting: Transaction[]
++employees: Employee[]
++SalesEvents: SalesEvent[]
++get_transaction(type:int,amount:int=0): Transaction
++proces_transactions()
++update_salary()
++update_customer()
+}
+
+class Stock{
++inventory: SalesItem[]
++get_item_count(ItemID:String): int
++get_total_inventory_value(): float
++get_inventory_value(ItenID:String): float
++get_itemGroup_list(): set
++get_item_list(itemGroup:ItemGroup). ItemGroup[]
++get_total_item_count(): int
++find_sales_item(ItemID:String): SalesItem
++add_sales_item(item:SalesItem)
++get_random_item_for_sale(): SalesItem
++build_initial_stock()
+}
+
+class SalesItem{
++itemId: String
++name: String
++itemGroup: String
++price: float
++stockCount: int
++set_amount(n:int): void
++copy(c:SalesItem): SalesItem
+}
+
+class SalesEvent{
++transaction: Transaction
++items: SalesItem[]
++get_total_value(markup:float): int
++add_item(salesItem:SalesItem)
++finalize(markup:float)
+}
+
+class Transaction{
++transactionType: int
++transactionState: int
++transactionID: String
++amount: float
++setState(state:int)
++get_next_id(): int
+}
+
+Employee "*"- "1" Boghandelen
+Transaction "*"-up- "1" Employee
+Boghandelen "1"-"1" Stock
+Stock "1"--"*" SalesItem
+Transaction "1"-"1" SalesEvent
+SalesEvent "1"-"1..*"  SalesItem
+Boghandelen "1"--"*" SalesEvent
+@enduml
+#+end_src
+#+reveal_html: </div>
+#+reveal_html: </div>
+#+reveal_html: </div>
+
+#+reveal_html: <div style="font-size: 60%;">
+Find meget mere info her: https://plantuml.com/class-diagram
+* Kravspecifikation
+
+** MoSCoW
+[[./img/moscow.jpg]]
+
+** MoSCoW
+#+reveal_html: <div style="font-size: 60%;">
+
+- *M*​ust have
+
+  Minimumskriterier, som alle skal opfyldes for at have et produkt.
+  
+- *S*​hould have
+
+  Vigtig funktionalitet, men er ikke vitale.
+  
+- *C*​ould have
+
+  Ønsket funktionalitet, men programmet vil virke uden.
+  
+- *W*​on't have (this time)
+
+  Funktionalitet, som med vilje ikke vil blive taget med i den pågældende programversion. Funktionaliteten kan implementeres i en senere opdatering eller lignende.
+  
+** Logbog
+#+attr_html: :height 500px
+[[./img/logbog.jpeg]]
+
+** Logbog
+#+reveal_html: <div style="font-size: 70%;">
+- Hver gruppe skal i deres logbog:
+  
+  - beskrive deres endelige projektidé
+  - udfylde deres egen MoSCOW-liste over projektet.
+
+* Arbejd, arbejd 
+
+#+attr_html: :height 200px
+[[./img/arbejd_arbejd.gif]]
+
+#+reveal_html: <div style="font-size: 50%;">
+- Når I skal til at arbejde med projektet så brug:
+  - *Iterativ udvikling*
+
+    Implementér ét grav ad gangen. Tag udgangspunkt i brugerhistorierne og MoSCoW.
+
+  - *Stepwise improvement*
+
+    Implementér basiskrav først. Forbedr implementeringen efterfølgende i en ny version.
+
+  - *Brug* =GIT=
