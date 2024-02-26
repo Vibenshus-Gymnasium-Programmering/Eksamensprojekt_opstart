@@ -313,7 +313,7 @@ Find meget mere info her: https://plantuml.com/class-diagram
 - Hver gruppe skal nu i deres *synopsis*:
   
   - Skrive en projektbeskrivelse med tilhørende problemformulering.
-  - Udfylde deres egen MoSCOW-liste over projektet.
+  - Udfylde deres egen MoSCoW-liste over projektet.
 
 - Begge dele skal godkendes af underviseren.
 * Arbejd, arbejd 
