@@ -279,6 +279,8 @@ Boghandelen "1"--"*" SalesEvent
 #+reveal_html: <div style="font-size: 60%;">
 Find meget mere info her: https://plantuml.com/class-diagram
 * Kravspecifikation
+#+attr_html: :height 500px
+[[./img/requirements.jpeg]]
 
 ** MoSCoW
 [[./img/moscow.jpg]]
@@ -302,17 +304,18 @@ Find meget mere info her: https://plantuml.com/class-diagram
 
   Funktionalitet, som med vilje ikke vil blive taget med i den pågældende programversion. Funktionaliteten kan implementeres i en senere opdatering eller lignende.
   
-** Logbog
+* Synopsis
 #+attr_html: :height 500px
-[[./img/logbog.jpeg]]
+[[./img/rapport.jpeg]]
 
-** Logbog
+** Synopsis
 #+reveal_html: <div style="font-size: 70%;">
-- Hver gruppe skal i deres logbog:
+- Hver gruppe skal nu i deres *synopsis*:
   
-  - beskrive deres endelige projektidé
-  - udfylde deres egen MoSCOW-liste over projektet.
+  - Skrive en projektbeskrivelse med tilhørende problemformulering.
+  - Udfylde deres egen MoSCOW-liste over projektet.
 
+- Begge dele skal godkendes af underviseren.
 * Arbejd, arbejd 
 
 #+attr_html: :height 200px
